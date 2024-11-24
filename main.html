@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./logo.png" type="image/x-icon">
+    <title>Fast Food Viet Nam</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-container">
+            <a class="navbar3 tab-hover navbar1">Fast Food</a>
+            <button class="navbar3 navbar-hover active" onclick="tab('tab1')">Thực đơn</button>
+            <button class="navbar3 navbar-hover" onclick="tab('tab2')">Khuyến mãi</button>
+            <button class="navbar3 navbar-hover" onclick="tab('tab3')">Cửa hàng</button>
+            <button class="navbar3 navbar-hover" onclick="tab('tab4')">Đặt tiệc</button>
+            <button class="navbar3 navbar-hover navbar2" id="button-sign">Đăng nhập</button>
+        </ul>
+    </nav>
+
+    <div class="menu-container">
+        <h1 class="menu-topic">Gà giòn</h1>
+
+        <div class="menu-container-small">
+            <div class="menu-card">
+                <img src="https://api.popeyes.vn/api/v1/files/1PCDrumstick.webp">
+                <h3 class="menu-card-topic">Gà giòn</h3>
+                <button class="sale-button">Đặt ngay</button>
+            </div>
+
+            <div class="menu-card">
+                <img src="https://api.popeyes.vn/api/v1/files/Combo2BIC.webp">
+                <h3 class="menu-card-topic">Combo Gà Giòn</h3>
+                <button class="sale-button">Đặt ngay</button>
+            </div>
+        </div>
+
+        <div class="horizontal-boundary"></div>
+        <h1 class="menu-topic">Gà Yuzu</h1>
+
+        <div class="menu-container-small">
+            <div class="menu-card">
+                <img src="https://api.popeyes.vn/api/v1/files/PP_GYuzu1pc.jpg">
+                <h3 class="menu-card-topic">Gà Yuzu</h3>
+                <button class="sale-button">Đặt ngay</button>
+            </div>
+
+            <div class="menu-card">
+                <img src="https://api.popeyes.vn/api/v1/files/PP_ComboYuzuViVu143K.jpg">
+                <h3 class="menu-card-topic">Combo Yuzu</h3>
+                <button class="sale-button">Đặt ngay</button>
+            </div>
+        </div>
+
+        <div class="horizontal-boundary"></div>
+        <h1 class="menu-topic">Gà Không Xương</h1>
+
+        <div class="menu-container-small">
+            <div class="menu-card">
+                <img src="https://api.popeyes.vn/api/v1/files/3PCsTender.webp">
+                <h3 class="menu-card-topic">Gà Không Xương</h3>
+                <button class="sale-button">Đặt ngay</button>
+            </div>
+
+            <div class="menu-card">
+                <img src="https://api.popeyes.vn/api/v1/files/Combo3PCsTender.webp">
+                <h3 class="menu-card-topic1">Combo Gà Không Xương</h3>
+                <button class="sale-button">Đặt ngay</button>
+            </div>
+        </div>
+
+        <div class="horizontal-boundary"></div>
+        <h1 class="menu-topic">Mì Ý Và Cơm</h1>
+
+        <div class="menu-container-small">
+            <div class="menu-card">
+                <img src="https://api.popeyes.vn/api/v1/files/08072022_071102_cmBBQggin.jpg">
+                <h3 class="menu-card-topic">Combo Cơm</h3>
+                <button class="sale-button">Đặt ngay</button>
+            </div>
+
+            <div class="menu-card">
+                <img src="https://api.popeyes.vn/api/v1/files/SpaghettiComboS2.webp">
+                <h3 class="menu-card-topic">Combo Mì Ý</h3>
+                <button class="sale-button">Đặt ngay</button>
+            </div>
+        </div>
+
+        <div class="horizontal-boundary"></div>
+        <h1 class="menu-topic">Burger</h1>
+
+        <div class="menu-container-small">
+            <div class="menu-card">
+                <img src="https://api.popeyes.vn/api/v1/files/ChickenBurger.webp">
+                <h3 class="menu-card-topic">Burger</h3>
+                <button class="sale-button">Đặt ngay</button>
+            </div>
+
+            <div class="menu-card">
+                <img src="https://api.popeyes.vn/api/v1/files/ComboShrimpBurger.webp">
+                <h3 class="menu-card-topic">Combo Burger</h3>
+                <button class="sale-button">Đặt ngay</button>
+            </div>
+        </div>
+
+            <div class="horizontal-boundary"></div>
+            <h1 class="menu-topic">Món ăn kèm</h1>
+
+        <div class="menu-container-small">
+            <div class="menu-card">
+                <img src="https://api.popeyes.vn/api/v1/files/ColeslawR.webp">
+                <h3 class="menu-card-topic">Bắp cải trộn</h3>
+                <button class="sale-button">Đặt ngay</button>
+            </div>
+
+            <div class="menu-card">
+                <img src="https://api.popeyes.vn/api/v1/files/Fries.webp">
+                <h3 class="menu-card-topic">Khoai tây Chiên</h3>
+                <button class="sale-button">Đặt ngay</button>
+            </div>
+
+            <div class="menu-card">
+                <img src="https://api.popeyes.vn/api/v1/files/Popcorn.webp">
+                <h3 class="menu-card-topic">Gà Popcorn</h3>
+                <button class="sale-button">Đặt ngay</button>
+            </div>
+        </div>
+
+        <div class="menu-container-small">
+            <div class="menu-card">
+                <img src="https://api.popeyes.vn/api/v1/files/Soup.webp">
+                <h3 class="menu-card-topic">Canh Soup</h3>
+                <button class="sale-button">Đặt ngay</button>
+            </div>
+
+            <div class="menu-card">
+                <img src="https://api.popeyes.vn/api/v1/files/Rice.webp">
+                <h3 class="menu-card-topic">Cơm Trắng</h3>
+                <button class="sale-button">Đặt ngay</button>
+            </div>
+        </div>
+
+        <div class="horizontal-boundary"></div>
+        <h1 class="menu-topic">Thức uống</h1>
+
+        <div class="menu-container-small">
+            <div class="menu-card">
+                <img src="https://api.popeyes.vn/api/v1/files/Coca.webp">
+                <h3 class="menu-card-topic">Coca Cola</h3>
+                <button class="sale-button">Đặt ngay</button>
+            </div>
+
+            <div class="menu-card">
+                <img src="https://api.popeyes.vn/api/v1/files/Sprite.webp">
+                <h3 class="menu-card-topic">Sprite</h3>
+                <button class="sale-button">Đặt ngay</button>
+            </div>
+
+            <div class="menu-card">
+                <img src="https://api.popeyes.vn/api/v1/files/Fanta.webp">
+                <h3 class="menu-card-topic">Fanta</h3>
+                <button class="sale-button">Đặt ngay</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="sale-container">
+        <h1 class="menu-topic">Khuyến mãi</h1>
+        <div class="menu-container-small">
+            <div class="menu-card">
+                <img src="https://api.popeyes.vn/api/v1/files/PPKVYUZU1_1.jpg">
+                <h3 class="menu-card-topic1">IU GÀ YUZU, VI VU CÙNG VỊ MỚI</h3>
+                <button class="sale-button">Đặt ngay</button>
+            </div>
+            
+
+            <div class="menu-card">
+                <img src="https://api.popeyes.vn/api/v1/files/_LTOYUZU_131k1200x1200.jpg">
+                <h3 class="menu-card-topic1">4 MIẾNG GÀ YUZU +2 NƯỚC CHỈ VỚI 131K</h3>
+                <button class="sale-button">Đặt ngay</button>
+            </div>
+
+            <div class="menu-card">
+                <img src="https://api.popeyes.vn/api/v1/files/_LTOYUZU_115k1200x1200.jpg">
+                <h3 class="menu-card-topic1">2 GÀ YUZU +2 GÀ GIÒN +2 NƯỚC CHỈ VỚI 115K</h3>
+                <button class="sale-button">Đặt ngay</button>
+            </div>
+        </div>
+        <div class="menu-container-small">
+
+            <div class="menu-card">
+                <img src="https://api.popeyes.vn/api/v1/files/350799655_272879675107537_3614183508697832303_n.png">
+                <h3 class="menu-card-topic1">DEAL HỜI MỖI NGÀY - GIẢM ĐẾN 50K</h3>
+                <button class="sale-button">Dùng Ngay</button>
+            </div>
+
+            <div class="menu-card">
+                <img src="https://api.popeyes.vn/api/v1/files/IMG_4987.jpeg">
+                <h3 class="menu-card-topic1">ĐƠN LỚN DEAL XỊN - GIẢM ĐẾN 90K + FREE SHIP</h3>
+                <button class="sale-button">Dùng Ngay</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="address-container">
+        <div class="address-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9513457.997633636!2d100.61609727186894!3d15.740495529744129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31157a4d736a1e5f%3A0xb03bb0c9e2fe62be!2zVmnhu4d0IE5hbQ!5e1!3m2!1svi!2s!4v1722545388537!5m2!1svi!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    
+        <div class="vertical-boundary"></div>
+    
+        <div class="address-select-container">
+            <select class="address-select">
+                <option value="" disabled selected>Chọn tỉnh/thành phố</option>
+                <option>Hồ Chí Minh</option>
+                <option>Hà Nội</option>
+            </select>
+    
+            <div class="address-card-container"></div>
+        </div>
+    </div>
+
+    <div class="booking-container">
+        <h1 class="booking-topic">Buổi tiệc khó quên cùng những món ngon & quà tặng từ Fast Food Viet Nam</h1>
+
+        <div class="booking-image">
+            <div>
+                <img src="https://api.popeyes.vn/api/v1/files/Rectangle293.png" alt="Thiệp mời">
+                <p>Thiệp mời</p>
+            </div>
+
+            <div>
+                <img src="https://api.popeyes.vn/api/v1/files/tochuctiec.png" alt="Nón tiệc">
+                <p>Nón tiệc</p>
+            </div>
+
+            <div>
+                <img src="https://api.popeyes.vn/api/v1/files/tochuctiec1.png" alt="Trang trí tiệc">
+                <p>Trang trí tiệc</p>
+            </div>
+
+            <div>
+                <img src="https://api.popeyes.vn/api/v1/files/tochuctiec4.png" alt="Bong Bóng">
+                <p>Bong Bóng</p>
+            </div>
+
+            <div>
+                <img src="https://api.popeyes.vn/api/v1/files/tochuctiec3.png" alt="Quà tặng">
+                <p>Quà tặng</p>
+            </div>
+        </div>
+
+        <div class="horizontal-boundary"></div>
+        <h1 class="booking-topic">Đặt tiệc</h1>
+
+        <form class="booking-container-small">
+            <div class="booking-select-container">
+                <select id="venue" name="venue" required class="booking-select">
+                    <option value="" disabled selected>Chọn cửa hàng</option>
+                    <option>Fast Food - Vincom Mega Mall Grand Park</option>
+                    <option>Fast Food - Vincom Mega Mall Smart City</option>
+                    <option>Fast Food - Vincom Mega Mall Royal City</option>
+                    <option>Fast Food - Vincom Mega Mall Times City</option>
+                    <option>Fast Food - Vincom Mega Mall Ocean Park</option>
+                </select>
+            </div>
+
+            <input type="text" placeholder="Họ và Tên" required minlength="6" class="booking-input">
+            <input type="tel" placeholder="Số điện thoại" required minlength="10" class="booking-input">
+            <input type="email" placeholder="Email" required minlength="11" pattern=".+@gmail\.com" class="booking-input">
+            <input type="date" required class="booking-input">
+            <input type="time" required class="booking-input">
+            <input type="number" placeholder="Số lượng khách" required min="10" class="booking-input">
+            <input type="text" placeholder="Yêu cầu đặc biệt" class="booking-input">
+            <button type="submit" class="booking-button">Đặt tiệc</button>
+        </form>
+
+        <div class="horizontal-boundary"></div>
+        <h1 class="booking-topic">Điều kiện áp dụng</h1>
+
+        <div class="footer-container">
+            <ul class="rule">
+                <li>Áp dụng khi đặt tiệc từ 10 người trở lên</li>
+                <li>Vui lòng liên hệ nhân viên để có thông tin chi tiết</li>
+            </ul>
+
+            <ul class="rule">
+                <li>Áp dụng cho dùng tại nhà hàng</li>
+                <li>Không áp dụng chung với các chương trình khuyến mãi</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="popup-sign" class="popup-sign">    
+        <div class="sign">
+            <span class="close-sign" onclick="close_sign()">&times;</span>
+            <div class="sign-tab">
+                <button class="sign-tab-button sign-active" onclick="open_sign(event, 'sign-in')">Đăng nhập</button>
+                <button class="sign-tab-button" onclick="open_sign(event, 'sign-up')">Đăng ký</button>
+            </div>
+
+            <div id="sign-in" class="tab-content">
+                <section class="sign-container">
+                    <form class="sign-container">
+                        <input class="sign-input" type="tel" placeholder="Số điện thoại" required minlength="10"><br>
+                        <input class="sign-input" type="password" placeholder="Mật khẩu" required minlength="6"><br>
+                        <button type="submit" class="sign-button">Đăng nhập</button>
+                    </form>
+                </section>
+            </div>
+
+            <div id="sign-up" class="tab-content">
+                <section class="sign-container">
+                    <form class="sign-container">
+                        <input class="sign-input" type="text" placeholder="Tên người dùng" required minlength="1"><br>
+                        <input class="sign-input" type="email" placeholder="Email" required minlength="10" pattern=".+@gmail\.com"><br>
+                        <input class="sign-input" type="tel" placeholder="Số điện thoại" required minlength="10"><br>
+                        <input class="sign-input" type="password" placeholder="Mật khẩu" required minlength="6"><br>
+                        <input class="sign-input" type="password" placeholder="Nhập lại mật khẩu" required minlength="6"><br>
+                        <button type="submit" class="sign-button">Đăng ký</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <ul class="footer-list">
+                <li class="footer1"><a class="footer3 tab-hover">Fast Food</a></li>
+                <li class="footer1"><a class="footer4">&copy; 2024 Fast Food Viet Nam</a><a class="footer4 tab-hover"> | Privacy Policy</a></li>
+            </ul>
+            
+            <ul class="footer-list">
+                <li class="footer1"><a class="footer4">Hotline Đặt hàng nhanh chóng </a></li>
+                <li class="footer1"><a class="footer5 tab-hover">1900 0000</a></li>
+            </ul>
+
+            <ul class="footer-list">
+                <li class="footer1"><button class="footer2 tab-hover active" onclick="tab('tab1')">Thực đơn</button></li>
+                <li class="footer1"><button class="footer2 tab-hover" onclick="tab('tab2')">Khuyến mãi</button></li>
+            </ul>
+
+            <ul class="footer-list">
+                <li class="footer1"><button class="footer2 tab-hover" onclick="tab('tab3')">Cửa hàng</button></li>
+                <li class="footer1"><button class="footer2 tab-hover" onclick="tab('tab4')">Đặt tiệc</button></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

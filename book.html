@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./logo.png" type="image/x-icon">
+    <title>Fast Food Viet Nam</title>
+    <link rel="stylesheet" href="else.css">
+    <link rel="stylesheet" href="book.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navbar-container">
+            <a class="navbar3 tab-hover navbar1">Fast Food</a>
+            <button class="navbar3 navbar-hover active" onclick="tab('tab1')">Thực đơn</button>
+            <button class="navbar3 navbar-hover" onclick="tab('tab2')">Khuyến mãi</button>
+            <button class="navbar3 navbar-hover" onclick="tab('tab3')">Cửa hàng</button>
+            <button class="navbar3 navbar-hover" onclick="tab('tab4')">Đặt tiệc</button>
+            <button class="navbar3 navbar-hover navbar2" id="button-sign">Đăng nhập</button>
+        </ul>
+    </nav>
+
+    <div id="popup-sign" class="popup-sign">    
+        <div class="sign">
+            <span class="close-sign" onclick="close_sign()">&times;</span>
+            <div class="sign-tab">
+                <button class="sign-tab-button sign-active" onclick="open_sign(event, 'sign-in')">Đăng nhập</button>
+                <button class="sign-tab-button" onclick="open_sign(event, 'sign-up')">Đăng ký</button>
+            </div>
+
+            <div id="sign-in" class="tab-content">
+                <section class="sign-container">
+                    <form class="sign-container">
+                        <input name="tel1" class="sign-input" type="tel" placeholder="Số điện thoại" required minlength="10" maxlength="11"><br>
+                        <input name="pass1" class="sign-input" type="password" placeholder="Mật khẩu" required minlength="6"><br>
+                        <button type="submit" class="sign-button">Đăng nhập</button>
+                    </form>
+                </section>
+            </div>
+
+            <div id="sign-up" class="tab-content">
+                <section class="sign-container">
+                    <form class="sign-container">
+                        <input name="user" class="sign-input" type="text" placeholder="Tên người dùng" required minlength="1"><br>
+                        <input name="tel" class="sign-input" type="tel" placeholder="Số điện thoại" required minlength="10" maxlength="11"><br>
+                        <input name="pass" class="sign-input" type="password" placeholder="Mật khẩu" required minlength="6"><br>
+                        <input name="password" class="sign-input" type="password" placeholder="Nhập lại mật khẩu" required minlength="6"><br>
+                        <button type="submit" class="sign-button">Đăng ký</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <div class="booking-container">
+        <h1 class="booking-topic">BUỔI TIỆC ĐÁNG NHỚ CÙNG NHỮNG MÓN NGON & QUÀ TẠI FAST FOOD VIET NAM</h1>
+
+        <div class="booking-image">
+            <div>
+                <img src="https://api.popeyes.vn/api/v1/files/Rectangle293.png" alt="Thiệp mời">
+                <p>Thiệp mời</p>
+            </div>
+
+            <div>
+                <img src="https://api.popeyes.vn/api/v1/files/tochuctiec.png" alt="Nón tiệc">
+                <p>Nón tiệc</p>
+            </div>
+
+            <div>
+                <img src="https://api.popeyes.vn/api/v1/files/tochuctiec1.png" alt="Trang trí tiệc">
+                <p>Trang trí tiệc</p>
+            </div>
+
+            <div>
+                <img src="https://api.popeyes.vn/api/v1/files/tochuctiec4.png" alt="Bong Bóng">
+                <p>Bong Bóng</p>
+            </div>
+
+            <div>
+                <img src="https://api.popeyes.vn/api/v1/files/tochuctiec3.png" alt="Quà tặng">
+                <p>Quà tặng</p>
+            </div>
+        </div>
+
+        <div class="horizontal-boundary"></div>
+        <h1 class="booking-topic">ĐẶT TIỆC</h1>
+        <div id="tt" class="booking-container-small">
+            <div class="booking-select-container">
+                <select name="a" required class="booking-select">
+                    <option value="" disabled selected>Chọn cửa hàng</option>
+                    <option>Fast Food - Vincom Mega Mall Grand Park</option>
+                    <option>Fast Food - Vincom Mega Mall Smart City</option>
+                    <option>Fast Food - Vincom Mega Mall Royal City</option>
+                    <option>Fast Food - Vincom Mega Mall Times City</option>
+                    <option>Fast Food - Vincom Mega Mall Ocean Park</option>
+                </select>
+            </div>
+
+            <input name="b" type="text" placeholder="Họ và Tên" required minlength="6" class="booking-input">
+            <input name="c" type="tel" placeholder="Số điện thoại" required minlength="10" class="booking-input">
+            <input name="d" type="number" placeholder="Số lượng khách" required min="10" class="booking-input">
+            <h2>GIỜ BẮT ĐẦU</h2>
+            <input name="e" type="date" required class="booking-input">
+            <input name="f" type="time" required class="booking-input">
+            <h2>YÊU CẦU</h2>
+            <input type="text" placeholder="Yêu cầu đặc biệt" class="booking-input">
+            <button id="ba" type="submit" class="booking-button">Đặt tiệc</button>
+        </div>
+
+        <div class="horizontal-boundary"></div>
+        <h1 class="booking-topic">ĐIỀU KIỆN ÁP DỤNG</h1>
+
+        <div class="footer-container">
+            <ul class="rule">
+                <li>Áp dụng khi đặt tiệc từ 10 người trở lên</li>
+                <li>Vui lòng liên hệ nhân viên để có thông tin chi tiết</li>
+            </ul>
+
+            <ul class="rule">
+                <li>Áp dụng cho dùng tại nhà hàng</li>
+                <li>Không áp dụng chung với các chương trình khuyến mãi</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <ul class="footer-list">
+                <li class="footer1"><a class="footer3 tab-hover">Fast Food</a></li>
+                <li class="footer1"><a class="footer4">&copy; 2024 Fast Food Viet Nam</a><a class="footer4 tab-hover"> | Privacy Policy</a></li>
+            </ul>
+
+            <ul class="footer-list">
+                <li class="footer1"><a class="footer4">Hotline Đặt hàng nhanh chóng </a></li>
+                <li class="footer1"><a class="footer5 tab-hover">1900 0000</a></li>
+            </ul>
+
+            <ul class="footer-list">
+                <li class="footer1"><button class="footer2 tab-hover active" onclick="tab('tab1')">Thực đơn</button></li>
+                <li class="footer1"><button class="footer2 tab-hover" onclick="tab('tab2')">Khuyến mãi</button></li>
+            </ul>
+
+            <ul class="footer-list">
+                <li class="footer1"><button class="footer2 tab-hover" onclick="tab('tab3')">Cửa hàng</button></li>
+                <li class="footer1"><button class="footer2 tab-hover" onclick="tab('tab4')">Đặt tiệc</button></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="else.js"></script>
+    <script src="book.js"></script>
+</body>
+</html>

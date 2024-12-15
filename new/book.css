@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+
+* {
+    font-family: Oswald;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.booking-container {
+    width: 60%;
+    margin: 60px auto 20px;
+    border-radius: 8px;
+}
+
+.booking-image {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+.booking-image div {
+    text-align: center;
+}
+
+.booking-image img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.booking-topic {
+    margin-top: 0;
+    color: #ff9633;
+    text-align: center;
+}
+
+.booking-select-container {
+    width: 100%;
+    margin: 0 0 0 10px;
+    padding: 20px 0;
+}
+
+.booking-select {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 50px;
+    border: 1px solid gray;
+}
+
+.booking-input {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    border-bottom: 2px solid gray;
+    margin-bottom: 20px;
+}
+
+.booking-button {
+    width: 100%;
+    border: none;
+    margin: 5px 0 0 10px;
+    padding: 10px 0;
+    color: white;
+    font-size: 17px;
+    border-radius: 50px;
+    background-color: #ff9633;
+}
+
+.rule {
+    padding: 0;
+    margin: 0 50px;
+}

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+
+* {
+    font-family: Oswald;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-card {
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    border: 1px solid gray;
+}
+
+.menu-card img {
+    height: auto;
+    max-width: 100%;
+    border-radius: 25px 25px 0 0;
+}
+
+.horizontal-boundary {
+    width: 102%;
+    height: 2px;
+    margin: 30px 0;
+    border-radius: 50px;
+    background-color: black;
+}
+
+.menu-container-small {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.menu-topic {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.menu-card-topic {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 23px;
+}
+
+.menu-card-topic1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.sale-button {
+    border: none;
+    background-color: #ff9633;
+    color: white;
+    font-size: 20px;
+    padding: 5px 50px 5px 50px;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.menu-container {
+    width: 75%;
+    margin: 40px auto 20px auto;
+}
+
+.sale-container {
+    width: 75%;
+    margin: 40px auto 20px auto;
+}

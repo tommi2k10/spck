@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+
+* {
+    font-family: Oswald;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.address-container {
+    margin-top: 50px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.address-map {
+    width: 75%;
+    height: 100%;
+}
+
+.vertical-boundary {
+    width: 2px;
+    background-color: #000;
+    height: 100%;
+}
+
+.address-select-container {
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.address-select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 50px;
+    border: 1px solid gray;
+}
+
+.address-card {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+
+.address-card-container {
+    display: flex;
+    flex-direction: column;
+}

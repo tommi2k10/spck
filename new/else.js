@@ -155,10 +155,6 @@ document.querySelector('#sign-in form').addEventListener('submit', function(e) {
 });
 
 function tab(tabId) {
-    const containers = document.querySelectorAll('.menu-container, .sale-container, .address-container, .booking-container');
-
-    containers.forEach(container => container.style.display = 'none');
-
     switch (tabId) {
         case 'tab1':
             window.location.href = 'menu.html';

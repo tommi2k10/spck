@@ -54,7 +54,7 @@
     </div>
 
     <div class="booking-container">
-        <h1 class="booking-topic">Buổi tiệc khó quên cùng những món ngon & quà tặng từ Fast Food Viet Nam</h1>
+        <h1 class="booking-topic">BUỔI TIỆC ĐÁNG NHỚ CÙNG NHỮNG MÓN NGON & QUÀ TẠI FAST FOOD VIET NAM</h1>
 
         <div class="booking-image">
             <div>
@@ -84,11 +84,10 @@
         </div>
 
         <div class="horizontal-boundary"></div>
-        <h1 class="booking-topic">Đặt tiệc</h1>
-
-        <form class="booking-container-small">
+        <h1 class="booking-topic">ĐẶT TIỆC</h1>
+        <div id="tt" class="booking-container-small">
             <div class="booking-select-container">
-                <select id="venue" name="venue" required class="booking-select">
+                <select name="a" required class="booking-select">
                     <option value="" disabled selected>Chọn cửa hàng</option>
                     <option>Fast Food - Vincom Mega Mall Grand Park</option>
                     <option>Fast Food - Vincom Mega Mall Smart City</option>
@@ -98,18 +97,19 @@
                 </select>
             </div>
 
-            <input type="text" placeholder="Họ và Tên" required minlength="6" class="booking-input">
-            <input type="tel" placeholder="Số điện thoại" required minlength="10" class="booking-input">
-            <input type="email" placeholder="Email" required minlength="11" pattern=".+@gmail\.com" class="booking-input">
-            <input type="date" required class="booking-input">
-            <input type="time" required class="booking-input">
-            <input type="number" placeholder="Số lượng khách" required min="10" class="booking-input">
+            <input name="b" type="text" placeholder="Họ và Tên" required minlength="6" class="booking-input">
+            <input name="c" type="tel" placeholder="Số điện thoại" required minlength="10" class="booking-input">
+            <input name="d" type="number" placeholder="Số lượng khách" required min="10" class="booking-input">
+            <h2>GIỜ BẮT ĐẦU</h2>
+            <input name="e" type="date" required class="booking-input">
+            <input name="f" type="time" required class="booking-input">
+            <h2>YÊU CẦU</h2>
             <input type="text" placeholder="Yêu cầu đặc biệt" class="booking-input">
-            <button type="submit" class="booking-button">Đặt tiệc</button>
-        </form>
+            <button id="ba" type="submit" class="booking-button">Đặt tiệc</button>
+        </div>
 
         <div class="horizontal-boundary"></div>
-        <h1 class="booking-topic">Điều kiện áp dụng</h1>
+        <h1 class="booking-topic">ĐIỀU KIỆN ÁP DỤNG</h1>
 
         <div class="footer-container">
             <ul class="rule">
@@ -121,39 +121,6 @@
                 <li>Áp dụng cho dùng tại nhà hàng</li>
                 <li>Không áp dụng chung với các chương trình khuyến mãi</li>
             </ul>
-        </div>
-    </div>
-
-    <div id="popup-sign" class="popup-sign">    
-        <div class="sign">
-            <span class="close-sign" onclick="close_sign()">&times;</span>
-            <div class="sign-tab">
-                <button class="sign-tab-button sign-active" onclick="open_sign(event, 'sign-in')">Đăng nhập</button>
-                <button class="sign-tab-button" onclick="open_sign(event, 'sign-up')">Đăng ký</button>
-            </div>
-
-            <div id="sign-in" class="tab-content">
-                <section class="sign-container">
-                    <form class="sign-container">
-                        <input class="sign-input" type="tel" placeholder="Số điện thoại" required minlength="10"><br>
-                        <input class="sign-input" type="password" placeholder="Mật khẩu" required minlength="6"><br>
-                        <button type="submit" class="sign-button">Đăng nhập</button>
-                    </form>
-                </section>
-            </div>
-
-            <div id="sign-up" class="tab-content">
-                <section class="sign-container">
-                    <form class="sign-container">
-                        <input class="sign-input" type="text" placeholder="Tên người dùng" required minlength="1"><br>
-                        <input class="sign-input" type="email" placeholder="Email" required minlength="10" pattern=".+@gmail\.com"><br>
-                        <input class="sign-input" type="tel" placeholder="Số điện thoại" required minlength="10"><br>
-                        <input class="sign-input" type="password" placeholder="Mật khẩu" required minlength="6"><br>
-                        <input class="sign-input" type="password" placeholder="Nhập lại mật khẩu" required minlength="6"><br>
-                        <button type="submit" class="sign-button">Đăng ký</button>
-                    </form>
-                </section>
-            </div>
         </div>
     </div>
 
@@ -182,5 +149,6 @@
     </footer>
 
     <script src="else.js"></script>
+    <script src="book.js"></script>
 </body>
 </html>
